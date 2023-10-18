@@ -1,0 +1,217 @@
+body {
+  background-color: #f5f5f5;
+  font-family: "Kalam", cursive;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2 {
+  margin: 0;
+  color: #0066cc;
+}
+
+.menu h1 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  padding: 10px 0 8px 0;
+  /*border: 1px solid #999;*/
+}
+.menu input[type="checkbox"] {
+  display: none;
+}
+.menu label:hover h2 {
+  color: #0066cc;
+  font-size: 21px;
+  transition: 0.5s;
+}
+.menu input:checked + label h2 {
+  color: #0066cc;
+  font-weight: 600;
+}
+.menu h2 {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  /*border: 1px solid #999;*/
+  padding: 6px 0 3px 30px;
+  position: relative;
+  color: #4cc3fa;
+}
+.menu label {
+  position: relative;
+  cursor: pointer;
+}
+.menu label::before {
+  content: url(icons/download.svg);
+  filter: contrast(0.5) brightness(200%);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 100%;
+  z-index: 1;
+  top: 2px;
+  left: 1px;
+}
+.menu input:checked + label::before {
+  content: url(icons/download-2.svg);
+  filter: contrast(1) brightness(100%);
+}
+.menu h2::before {
+  content: "";
+  display: block;
+  background-color: green;
+  border-left: 2px solid #0066cc;
+
+  position: absolute;
+  left: 10px;
+  top: -16px;
+  height: 100%;
+}
+.menu h2::after {
+  content: "";
+  display: block;
+  background-color: green;
+  border-top: 2px solid #4cc3fa;
+
+  position: absolute;
+  width: 20px;
+  left: 11px;
+  top: 12px;
+}
+
+.menu input:checked + label h2::after {
+  border-color: #0066cc;
+}
+
+fieldset #option,
+#text {
+  font-family: "Kalam", cursive;
+}
+
+.location {
+  color: #0066cc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 0, 0, 0);
+  width: calc(47.2%);
+  margin-left: 5px;
+}
+.location #option {
+  border-radius: 6px;
+  border: none;
+  background-color: #00acfc;
+  color: white;
+}
+
+form button {
+  font-family: "Kalam", cursive;
+}
+.location select {
+  width: 100px;
+  text-align: center;
+}
+
+.location input {
+  width: calc(100% - 100px - 16px);
+  border-radius: 6px;
+  border: none;
+  background-color: #00acfc;
+  color: white;
+  padding-left: 5px;
+}
+::placeholder {
+  color: #ffffffc4;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+input:focus {
+  outline: none;
+}
+
+.menu {
+  margin-left: 20px;
+}
+.background {
+  margin-left: 5px;
+  background-color: #fff;
+  width: calc(50%);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  margin: 5px;
+
+  font-size: 14px;
+  color: #fff;
+  background-color: #0066cc;
+  padding: 10px 30px;
+  border: 2px solid #0066cc;
+  border-radius: 50px;
+  transition: 1s;
+  align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: 1s;
+  padding: 10px 50px;
+  background-color: #fff;
+  color: #00acfc;
+  border: solid 2px #00acfc;
+}
+
+.soup {
+  background: url(icons/soup.png) no-repeat center;
+  background-size: auto 100%;
+  transition: ease 0.5s;
+}
+.soup:hover {
+  background-size: 50%;
+  background-position: center right;
+}
+.salad {
+  background: url(icons/salad.png) no-repeat center;
+  background-size: auto 100%;
+  transition: ease 0.5s;
+}
+.salad:hover {
+  background-size: 60%;
+  background-position: center right;
+}
+.pizza {
+  background: url(icons/pizza.png) no-repeat center;
+  background-size: auto 100%;
+  transition: ease 0.5s;
+}
+.pizza:hover {
+  background-size: 55%;
+  background-position: center right;
+}
+.pie {
+  background: url(icons/pie.png) no-repeat center;
+  background-size: auto 70%;
+  transition: ease 0.5s;
+}
+.pie:hover {
+  background-size: 50%;
+  background-position: center right;
+}
+.polenta {
+  background: url(icons/polenta.png) no-repeat center;
+  background-size: auto 64%;
+  transition: ease 0.5s;
+}
+.polenta:hover {
+  background-size: 50%;
+  background-position: center right;
+}

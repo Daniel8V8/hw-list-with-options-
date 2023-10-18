@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>List With Options</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="thankyou.html">
+      <div class="background">
+        <section class="menu">
+          <h1>Food Menu</h1>
+          <ul>
+            <li class="salad">
+              <input type="checkbox" name="salad" id="salad" />
+              <label for="salad">
+                <h2>Salad</h2>
+              </label>
+            </li>
+
+            <li class="pizza">
+              <input type="checkbox" name="pizza" id="pizza" />
+              <label for="pizza">
+                <h2>Pizza</h2>
+              </label>
+            </li>
+
+            <li class="soup">
+              <input type="checkbox" name="soup" id="soup" />
+              <label for="soup">
+                <h2>Soup</h2>
+              </label>
+            </li>
+
+            <li class="polenta">
+              <input
+                type="checkbox"
+                name="moldavian-polenta"
+                id="moldavian-polenta"
+              />
+              <label for="moldavian-polenta">
+                <h2>Moldavian <br />Polenta</h2>
+              </label>
+            </li>
+
+            <li class="pie">
+              <input type="checkbox" name="pie" id="pie" />
+              <label for="pie">
+                <h2>Pie</h2>
+              </label>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <fieldset class="location">
+        <legend>deliver to location</legend>
+        <select name="" id="option" required>
+          <option value="-">select city</option>
+          <option value="a">-- Town A --</option>
+          <option value="b">-- Town B --</option>
+          <option value="c">-- Town C --</option>
+        </select>
+        <input id="text" placeholder="enter the street address" required />
+      </fieldset>
+
+      <button>CONFIRM ORDER
+        <a href="thankyou.html"></a>
+      </button>
+    </form>
+  </body>
+</html>
